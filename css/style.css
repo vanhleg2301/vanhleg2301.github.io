@@ -1,0 +1,229 @@
+/* reset CSS */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica,Arial, sans-serif;
+}
+
+/* 
+    Tu ngoai vao trong -> tu tren xuong duoi -> tu tong quan den chi tiet
+    1. vi tri ?
+    2. kich thuoc ? ( width height )
+    3, mau sac ?
+    4. kieu dang ?
+*/
+.clear{
+    clear: both; /* khắc phục các float */
+}
+
+.text-white {
+    color: #fff !important ; /* Tất cả những đoạn tẽxt khác màu trắng mà thêm class = "text-ưhite"
+                    thì nó sẽ có màu trắng */
+}
+
+#main {
+    height: 2000px;
+}
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* dieu chinh do sau */
+}
+
+#nav {
+     display: inline-block;
+}
+
+#nav, .subnav{ 
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+
+}
+
+#nav .subnav li {
+    position: relative;
+    display: block;
+
+}                   
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li > a { 
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block; 
+}
+
+#nav > li:hover > a, 
+#nav .subnav li:hover a {
+    color: black ;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    min-width: 160px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    padding: 0 12px;
+    color: black;
+    line-height: 38px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 10px
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px; 
+}
+
+#header .search-btn:hover {
+    cursor: pointer; 
+    /* Dung de bien doi con tro chuot khi chi vao search*/
+    background-color: red;
+}
+
+#header .ti-shopping-cart-full {
+    color: white;
+    height: 46px;
+    line-height: 46px;
+}
+
+
+
+
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/Program-html-css-js-bootstrap/W3.Band/assets/img/slider1/vanhvanh.jpg') top center / cover no-repeat;
+    
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: white;
+    text-align: center;
+    /* 1 cac de can giua
+    left: 50%;
+    transform: translateX(-50%); 
+    */
+    /* cach thu 2 de can giua
+    right: 0;
+    left: 0; 
+    */
+    width: 100%; /* cach thu 3 */
+}
+
+#slider .text-heading {
+    font-weight: 380;/*Do day cua chu*/
+    font-size: 24px;
+}
+
+#slider .text-decription{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+
+
+
+
+#content {
+
+}
+
+#content .content-section {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0px;
+    width: 800px;
+}
+
+#content .content-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 4px; /* khoang cach cua cac chu */
+}
+
+#content .content-slogan {
+    text-align: center;
+    font-style: italic;
+    margin: 25px 0;
+    font-size: 15px;
+    opacity: 0.6; /* Do trong suot cua chu */
+}
+
+#content .about-text {
+    margin: 25px 0;
+    font-size: 15px;
+    text-align: justify; /*can chu deu hai ben  */
+    line-height: 1.4; /* khoang cach cac dong cua chu ( tieng anh la 1.4, tieng viet la 1.6)*/
+}
+
+
+
+
+#content .member-list {
+    margin-top: 48px 0 48px 0;
+    /* overflow: hidden; /* dùng để khắc phục float ở dưới */
+}
+
+#content .member-item {
+   float: left; /* Khi dùng float thì thẻ cha sẽ bị co lại 
+                    tức là những thẻ con sẽ bị đẩy ra một mặt phẳng khác */
+   /* width: calc(100% / 3); */
+   width : 33.33333%;
+   text-align: center;
+}
+
+#content .member-name {
+    margin: 15px 0 15px 0;
+    font-size: 15px;
+    
+}
+
+#content .member-img {
+    border-radius: 4px;
+    width: 200px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+/* tour-section */
+.tour-section{
+    background-color: black;
+}
+
+
